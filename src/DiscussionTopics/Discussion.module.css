@@ -1,0 +1,126 @@
+.section
+{
+   width: 80vw;
+   margin-top: 0;
+   padding-top: 0;
+   background-color: #ecf0f1;
+}
+.container{
+    
+   background-color: #ecf0f1;
+   padding-left: 10vw;
+   padding-right: 10vw;
+   height: 100vh;
+   margin-top: 0;
+   padding-top: 0;
+}
+
+.card{
+    min-height: 60vh;
+    background-color: #ecf0f1;
+    box-shadow:  0px 0px 20px  #888888;;
+    background-color:white;
+    /* border-radius: 5px; */
+   
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.title
+{
+    text-align: center;
+}
+
+
+.title>h1 , p
+{
+    font-size: 48px;
+    margin-left: 1vh;
+    padding-top: 2vh;
+}
+.title>p
+{
+    margin-top: 1vh;
+    font-size: 24px;
+    margin-bottom: 3vh;
+}
+.commentCards
+{
+    /* box-shadow:  0px 0px 20px  #2980b9; */
+    background-color:white;
+    width: 75vw;
+    min-height: 8vh;
+    margin: auto auto;
+    line-height: 2vh;
+    overflow: hidden;
+    border-bottom: 1px solid #bdc3c7;
+    /* border-radius: 5px; */
+    /* margin-bottom: 2vh; */
+}
+.username , .comment
+{
+    font-size: 24px;
+
+}
+.username
+{
+    text-align: left;
+    float: left;
+    margin-bottom: 0;
+    padding-top: 3vh;
+    font-size: 28px;
+}
+.comment
+{
+    line-height: 2vh;
+    float:left;
+    margin-bottom: 0;
+    padding-top: 3.2vh;
+    font-size: 20px;
+}
+.textarea
+{
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-top: 3vh;
+    border-radius: 5px;
+    margin-left: 1.5vw;
+    border: none;
+    box-shadow:  0px 0px 20px  #888888;
+    width: 75vw;
+    min-height: 8vh;
+    overflow: auto;
+    text-align: center;
+}
+.submitBtn{
+    border: none;
+    height: 5vh;
+    width: 20%;
+    color: white;
+    background-color: #2980b9;
+    margin-top: 2vh;
+    margin-left: 33vw;
+    margin-bottom: 2vw;
+}
+.submitBtn:hover{
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9 ;
+    transition: .5s;
+  }
+
+  @media screen and (max-width : 768px) {
+      .container{
+          max-width: 100%;
+      }
+      .section{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+      }
+      .card{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+      
+  }

@@ -1,0 +1,94 @@
+.main{
+    background-color: #ecf0f1;
+    display: flex;
+    min-height: 100vh;
+}
+.section{
+    width: 60%;
+}
+.aside{
+    width: 40%;
+}
+
+.card{
+    background-color: white;
+    height: 50vh;
+    width: 30vw;
+    box-shadow:  0px 0px 20px   #3498db;;
+    border-radius: 5%;
+    margin-top: 5vh;
+}
+.logo{
+    width: 15vw;
+    height: 15vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    margin-right: auto;
+}
+.card>p{
+    font-size: 27px;
+    text-align: center;
+   
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info>p{
+    margin-top: 2vh;
+    font-size: 24px;
+}
+.desktop{
+    background-color: #ecf0f1;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+.mobile{
+    display: none;
+}
+
+.logOutBtn{
+    border: none;
+    height: 7vh;
+    width: 50%;
+    color: white;
+    background-color: #ff7675;
+    margin-left: 15%;
+   margin-top: 10vh;
+}
+.logOutBtn:hover{
+    background-color: white;
+    color: #d63031;
+    border: 1px solid #ff7675 ;
+    transition: .5s;
+  }
+@media screen and (max-width : 768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .section{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+        padding: 5vh;
+    }
+    .card{
+        width: 80%;
+        padding: 0;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .logOutBtn{
+        margin-top: 5vh;
+    }
+    
+}

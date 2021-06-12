@@ -1,0 +1,74 @@
+.section{
+    width: 75%;
+   
+}
+.Container{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 8vh;
+    width: 65%;
+}
+.Container>div{
+    
+    box-shadow:  0px 0px 20px  #888888;;
+}
+.Cards{
+     width: 100%;
+     min-height: 10vh;
+     background-color: #ecf0f1; 
+   
+    background-color:white;
+    
+    border-bottom: 1px solid #bdc3c7;
+   
+    cursor: pointer;
+}
+/* .Cards :first-of-type{
+    background-color: #2c3e50;
+} */
+.title{
+    margin-left: 2vw;
+    font-size: 24px;
+    float: left;
+    color: black;
+    margin-top: 3vh;
+}
+.desc{
+
+    font-size: 16px;
+    float: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 3vh;
+}
+.first{
+    font-size: 24px;
+    float: left;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+    /* box-shadow:  0px 0px 20px  #888888;; */
+}
+.Cards:hover  {
+    background-color: #3498db;
+    transition: .35s;
+}
+
+@media screen and (max-width:768px) {
+    .section{
+        max-width: 100%;
+    }
+    .Container{
+        width: 100%;
+        padding: 5vh;
+        margin: 0;
+    }
+    .Cards{
+        min-height: 15vh;
+    }
+    
+}

@@ -1,0 +1,25 @@
+
+
+.main{
+    background-color: #ecf0f1;
+    height: 90vh;
+    display: flex;
+  }
+  
+  .aside{
+    width: 54%;
+    /* background-color: #95a5a6; */
+  }
+
+  @media screen and (max-width:768px) {
+    .main{
+      background-color: #ecf0f1;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+        }
+
+        .aside{
+          width: 100%;
+        }
+  }

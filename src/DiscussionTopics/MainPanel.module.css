@@ -1,0 +1,75 @@
+.aside{
+    padding-right: 6vw; 
+}
+
+.Main{
+    text-align: center;
+    background-color: #ecf0f1;
+    min-height: 90vh;
+}
+
+.mainDiv{
+    width: 100vw;
+    display: flex;
+}
+.createNew{
+    width: 30vw;
+    
+    height: 65vh;
+    background-color: #ecf0f1;
+    box-shadow:  0px 0px 20px  #888888; 
+    background-color:white;
+    /* border-radius: 5px; */
+    margin-top: 8vh;
+    margin-left: 0px;
+    margin-right: 2px;
+}
+.createNew > h1{
+    padding-top: 5vh;
+    margin-bottom: 6vh;
+}
+.input{
+    font-size: 18px;
+    padding-bottom: 12px;
+    padding-left: 2vh;
+    margin-bottom: 36px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+  }
+.createNew :nth-child(3){
+    height: 20vh;
+}
+.createBtn{
+    border: none;
+    height: 5vh;
+    width: 50%;
+    color: white;
+    background-color: #2980b9;
+    margin-left: auto;
+    margin-right: auto;
+}
+.createBtn:hover{
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9 ;
+    transition: .5s;
+  }
+
+  @media screen and (max-width:768px) {
+      .mainDiv{
+          display: flex;
+          flex-direction: column;
+      }
+      .aside{
+          max-width: 100%;
+          padding: 2vh;
+      }
+      .createNew{
+          width: 100%;
+          
+      }
+      
+  }

@@ -1,0 +1,124 @@
+.section{
+    width: 45%;
+    /* display: inline-block;*/
+    padding-top: 15vh; 
+    padding-left: 8vh;
+    padding-right: 8vh;
+  }
+  .section>h1{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 100;
+    font-size: 28px;
+    margin-bottom: 4vh;
+    color: #2d3436;
+  }
+  .section>p{
+    font-size: 20px;
+    line-height: 4vh;
+  }
+  #p{
+    color :red;
+  }
+  #birdbody{
+    animation: bird 1.5s infinite linear;
+  }
+
+  @keyframes bird {
+    0%{
+      transform: translateY(0);
+      
+    }
+    50%{
+      transform: translateY(3%);
+    }
+    100%{
+      transform: translateY(-0%);
+    }
+    
+  }
+
+  #tune1{
+    animation: tune1anim 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes tune1anim {
+    0%{
+      transform: translateY(0);
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: translateY(3%);
+      transform: rotate(30deg);
+    }
+    100%{
+      transform: translateY(-0%);
+      transform: rotate(0deg);
+    }
+    
+  }
+
+  #tune2{
+    animation: tune2anim 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes tune2anim {
+    0%{
+      transform: translateY(0);
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: translateY(-3%);
+      transform: rotate(-30deg);
+    }
+    100%{
+      transform: translateY(-0%);
+      transform: rotate(0deg);
+    }
+    
+  }
+
+  #tune3{
+    animation: tune1anim 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #tune4{
+    animation: tune2anim 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #tune5{
+    animation: tune1anim 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  #tune6{
+    animation: tune2anim 1.5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+
+ 
+
+  @media screen and (max-width:768px) {
+    .section{
+      width: 100%;
+      padding: 0;
+    }
+    .section>h1{
+      margin-top: 4vh;
+      text-align: center;
+    }
+    .section>p{
+      font-size: 20px;
+      line-height: 4vh;
+    }
+  }
