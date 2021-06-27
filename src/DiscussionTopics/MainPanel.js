@@ -17,7 +17,7 @@ class MainPanel extends Component{
     id = '';
 
    componentDidMount(){
-    axios.get('http://localhost:5000/topics/')
+    axios.get('https://converse-node-api.herokuapp.com/topics/')
     .then(response=>{
         if (response.data.length > 0) {
             this.setState({obj : response.data.map(object => object)})
@@ -45,12 +45,12 @@ class MainPanel extends Component{
             desc : this.desc,
             user : localStorage.getItem("currentUser")
         };
-        axios.post('http://localhost:5000/topics/add',obj)
+        axios.post('https://converse-node-api.herokuapp.com/topics/add',obj)
         .then(res=>{
             console.log(res.data)
             this.setState({title : this.title,desc : this.desc})
         
-            axios.get('http://localhost:5000/topics/')
+            axios.get('https://converse-node-api.herokuapp.com/topics/')
             .then(response=>{
                 if (response.data.length > 0) {
                     this.setState({obj : response.data.map(object => object)})

@@ -15,21 +15,21 @@ class userPage extends Component{
         discussions:[]
     }
     componentDidMount(){
-        axios.get('http://localhost:5000/User',{
+        axios.get('https://converse-node-api.herokuapp.com/User',{
             params:{
                 username : localStorage.getItem("currentUser")
             }
         })
         .then(response1=> {
             // console.log(response1.data[0].name);
-            axios.get('http://localhost:5000/UserComments',{
+            axios.get('https://converse-node-api.herokuapp.com/UserComments',{
                 params:{
                     username:localStorage.getItem("currentUser")
                 }
             })
             .then(response2=>{
                 // console.log(response2.data)
-                axios.get('http://localhost:5000/UserDiscussions',{
+                axios.get('https://converse-node-api.herokuapp.com/UserDiscussions',{
                     params:{
                         username:localStorage.getItem("currentUser")
                     }

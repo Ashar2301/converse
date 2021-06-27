@@ -23,7 +23,7 @@ class Discussion extends Component{
             this.setState({render:true})
         }
             console.log(this.props.location.props);
-            axios.get('http://localhost:5000/topics/' + this.props.location.props)
+            axios.get('https://converse-node-api.herokuapp.com/topics/' + this.props.location.props)
         .then(response=>{
             console.log(response.data);
             this.titlename = response.data.title;
@@ -35,7 +35,7 @@ class Discussion extends Component{
             console.log(err)
         })
         .then(()=>{
-            axios.get('http://localhost:5000/discussion/getComments', {
+            axios.get('https://converse-node-api.herokuapp.com/discussion/getComments', {
             params: {
               title: this.titlename
             }
@@ -69,7 +69,7 @@ class Discussion extends Component{
                     comment : obj.value
                 }
                 console.log(comment);
-                axios.post('http://localhost:5000/discussion/addComment',post)
+                axios.post('https://converse-node-api.herokuapp.com/discussion/addComment',post)
                 .then(response =>{
                     var newcommentobj = {username : post.username , comment : post.comment}
                 const arr = this.state.commentarr;

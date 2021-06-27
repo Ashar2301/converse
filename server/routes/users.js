@@ -13,6 +13,9 @@ router.route('/').get((req,res)=>{
     .catch(err => res.status(400).json('Error: ' + err));
 
 })
+router.route('/testing').get((req,res)=>{
+  res.send('HELLO WORLD')
+})
 
 router.route('/User').get((req,res)=>{
   const username = req.query.username;
