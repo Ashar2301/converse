@@ -1,3 +1,5 @@
+
+//import { useHistory } from 'react-router'
 class Auth{
 
     constructor() {
@@ -12,12 +14,11 @@ class Auth{
       logout() {
         this.authenticated = false;
         localStorage.setItem('currentUser',"")
-        window.location.replace('http://localhost:3000')
+        
       }
     
       isAuthenticated() {
        if(localStorage.getItem('currentUser')!==""){
-           console.log(true)
            return true;
        }
        else{

@@ -2,6 +2,7 @@ import react, { Component } from 'react';
 import classes from './LogIn.module.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { withRouter } from 'react-router-dom';
 //import { response } from 'express';
 
 class LogIn extends Component{
@@ -26,9 +27,11 @@ class LogIn extends Component{
         })
         .then(response =>{
             if(response.data.length > 0){
+               // const history = useHistory();
                 localStorage.setItem("currentUser" , response.data[0].username);
-                window.location.replace("http://localhost:3000/topics");
-                
+                const { history } = this.props;
+                if(history) history.push('/topics');
+                window.location.reload();
             }
             else{
                 window.alert("USERNAME OR PASSWORD DO NOT MATCH!!")
@@ -70,4 +73,4 @@ class LogIn extends Component{
     }
 }
 
-export default LogIn;
+export default withRouter(LogIn);

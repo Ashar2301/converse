@@ -6,6 +6,7 @@ import classes from './userPage.module.css'
 import DiscussionElement from './discussionElement'
 import CommentsElement from './commentsElement'
 import converse from '../DiscussionTopics/bird.svg'
+import { withRouter } from 'react-router-dom';
 class userPage extends Component{
 
     state={
@@ -53,6 +54,9 @@ class userPage extends Component{
     onLogOutClick=()=>{
        
         Auth.logout();
+        const { history } = this.props;
+                if(history) history.push('/');
+                window.location.reload();
     }
    
 
@@ -121,4 +125,4 @@ class userPage extends Component{
 
 }
 
-export default userPage;
+export default withRouter(userPage);
